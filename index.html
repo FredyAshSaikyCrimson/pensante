@@ -1,0 +1,316 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplic. Web de jQuery Mobile</title>
+<link href="jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script language="javascript">
+var nombre;
+var anchonombre;
+var burrito; 
+var asunto; 
+var email; 
+var queso; 
+var bien; 
+var agni; 
+var rudra; 
+var a1, a2, a3, a4, a5; 
+var ebony; 
+var ivory; 
+var punto; 
+var telefono; 
+var dante; 
+var vergil; 
+var mundus;
+function dmc(){
+nombre=document.getElementById("txtDante1").value;
+nombre=nombre.toUpperCase();
+document.getElementById("txtDante1").value=nombre;
+anchonombre=nombre.length;
+for(burrito=0;burrito<=anchonombre-1;burrito++){
+bien=nombre.charAt(burrito);
+if(((bien>='A')&&(bien<='Z'))||(bien==" ")){
+}
+else{
+alert("Caracteres No Validos");
+}
+}
+}
+
+
+function hotmail(){
+email=document.getElementById("txtDante2").value;
+queso=email.charAt(0);
+ebony=email.indexOf("@");
+ivory=email.lastIndexOf("@");
+punto=email.indexOf(".");
+if((((queso>=0)||(queso<=9))||((ebony!=ivory)||(punto==-1)))||(ebony==-1)){
+alert("El E-mail No Esta Correcto Favor De Verificarlo");
+}
+else{
+}
+}	
+
+function telefono(){
+telefono=document.getElementById("txtDante3").value;
+dante=telefono.length;
+for(vergil=0;vergil<=dante-1;vergil++){
+cool=telefono.charAt(vergil);
+if(((cool>=0)&&(cool<=9))||((cool==' ')||(cool=='-'))){
+}
+alert("Caracteres Invalidos");
+break;
+}
+}
+
+	
+function escribe(){
+asunto=document.getElementById("txtDante4").value;
+asunto=asunto.toUpperCase();
+document.getElementById("txtDante4").value=asunto;
+}
+
+
+function metal() {
+agni=document.getElementById("txtDante5").value;
+rudra=document.getElementById("txtDante6").value;
+if(agni==rudra){
+}
+else{
+alert("Los valores de seguridad no coinciden");
+}
+}
+function limpiar(){
+}
+function enviar(){
+a1=document.getElementById("txtDante1").value;
+a2=document.getElementById("txtDante4").value;
+a3=document.getElementById("txtDante2").value;
+a4=document.getElementById("txtDante6").value;
+a5=document.getElementById("txtDante3").value;
+if((a1=="")||(a2=="")||(a3=="")||(a4=="")||(a5=="")){
+alert("Faltan Datos Por Introducir");
+}
+else{
+alert("Enviado");
+document.getElementById("txtDante1").value="";
+document.getElementById("txtDante4").value="";
+document.getElementById("txtDante2").value="";
+document.getElementById("txtDante6").value="";
+document.getElementById("txtDante3").value="";
+}
+}
+</script>
+</head> 
+<body> 
+<audio src="audio/DMC.mp3" autoplay>
+</audio>
+<div data-role="page" id="page">
+	<div data-role="header">
+		<h1> DEVIL MAY CRY</h1>
+	</div>
+    <center>
+    <img src="img/logo.png" width="80%" height="35%">
+    </center>
+     <div data-role="content">	
+     <ul data-role="listview">a
+   			<li><a href="#page2">¿Quiénes Somos?</a></li>
+            <li><a href="#page3">Servicios o Productos</a></li>
+			<li><a href="#page4">Equipo</a></li>
+            <li><a href="#page5">Contáctanos</a></li>
+            <center>
+ <iframe width="90%" height="50%" src="https://www.youtube.com/embed/icXUkIfZxyg" frameborder="0" allowfullscreen></iframe></center>
+	</ul>		
+    
+	</div>
+	<div data-role="footer">
+		<h4>Fredy Ash Saiky Crimson</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page2">
+	<div data-role="header">
+		<h1>¿Quiénes Somos?</h1>
+	</div>
+	<div data-role="content">	
+   <center><h1>Devil May Cry</h1></center>
+   Devil May Cry traducido como “El Diablo Debe Llorar” Es una empresa mundial de una sola oficina, El propietario de la empresa es  “Dante The Demon Hunter” acompañado de una hermosa mujer llamada "Trish"
+  <center> <img src="img/dante.png" width="50%" height="45%"> 
+   
+   
+   <img src="img/trish.png" width="12%" height="12%"> </center>
+  	<center><h1>Misión</h1></center> 
+    Acabar con todos los demonios de “Lucifer (Satanás)”  que logran salir del infierno y atormentar a los seres humanos ya que el trágico pasado de “Dante”  Lo impulsa a acabar con todos los demonios del infierno 
+   <center><img src="img2/lucifer.jpg" width="50%" height="50%"></center> </div>
+   <center><h1>Visión</h1></center> 
+   Traer la paz al mundo de los humanos y enseñar a las personas lo que es apreciar a los demás y tratar de ser mejores personas cada día para no terminar como un demonio ya que los demonios carecen de muchas cosas 
+   <center>
+   <img src="img/mundo.jpg" width="50%" height="35%">
+   </center>
+  <center><h1>Valores</h1></center>
+   <center><img src="img/lema.jpg" width="90%" height="40%"></center>
+<div data-role="footer">
+  <h4>Fredy Ash Saiky Crimson</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page3">
+	<div data-role="header">
+		<h1>Servicios o Productos</h1>
+	</div>
+	<div data-role="content">	
+        <center><h1>Servicio</h1></center>
+        Nuestro servicio es de 4:00AM a 9:00PM Nos Especializamos en acabar con demonios u objetos malditos, Pero se necesita una contraseña especial para aceptar ese tipo de trabajos.
+        <center><h1>Productos</h1></center>
+   <center> <img src="img/Ebony&Ivory.png" width="50%" height="40%"></center>
+   "Ebony and Ivory" Son 2 pistolas Calibre 2.50 modelo 1911 semiautomáticas   cada pistola representa su color por su nombre (ébano y marfil) en cada pistola tiene 2 mujeres representando el color en Ebony esta una mujer con el cabello negro e Ivory esta una mujer con el cabello rubio, Ebony tiene escrito “ Ebony and Ivory” e Ivory tiene escrito “For Tony Redgrave by As Art Warxs”
+   <center>
+   <img src="img/Rebellion.png" width="70%" height="40%"></center>    
+   "Rebellion" Una Espada con una fuerza destructible que con la fuera del espíritu puede romper todo lo que se le cruce en el camino, pero cuando se le derrama sangre de un demonio toma una forma muy poderosa, a pesar de su tamaño “Rebellion” puede ser muy liviana para aquel quien sepa usar su poder 
+   <center>
+   <img src="img/nevan.jpg" width="70%" height="40%"></center>
+   "Nevan" Es un bajo Guadaña que contiene el espíritu de una vampira, su dulce melodía puede invocar murciélagos y entre más alta suene  pasa hacer una guitarra que puede invocar rayos y entre más y más suba el volumen puede convertir el sonido en filosas navajas con rayos y murciélagos  aparte da la capacidad de volar 
+      <center>
+   <img src="img/pandora.jpg" width="60%" height="40%"></center>
+   "Pandora" La caja o Maletín más temida entre los demonios puede convertirse en 666 formas más aparte cuando se abre puede ser peor que el agua bendita para los demonios
+   <center>
+   <img src="img/kalina.jpg" width="70%" height="40%"></center>
+   "Kalina ann" Bazuca con una cuchilla en frente muy al estilo de la 2 guerra mundial 
+   <center>
+   <img src="img/Beowulf.png" width="40%" height="40%"></center>    
+   "Beowulf" Puños y Pies de plata que resplandece una luz muy brillante que quema, y más aparte da la capacidad de tener más velocidad y fuerza tanto en los brazos como en las piernas ya que son hechas por un demonio y un angel
+   <center>
+   <img src="img/Lucifer.jpg" width="30%" height="60%"></center>
+   "Lucifer" Arma bendecida con el nombre del rey del infierno ya que se dice que una vez el mismo Satanás uso esta arma para enfrentarse al “Arcángel Miguel” pero ahora es empuñada por “Dante The Demon Hunter”
+   <center>
+   <img src="img/Yamato_DmC_Render.jpg" width="90%" height="30%"></center>
+    "Yamato" Catana usada por el difunto hermano de “Dante”, “Vergil” la espada más filosa del mundo Con tan solo moverla puede cortar una montaña también es la llave para abrir la puerta del Infierno y ahora está en manos de su hijo “Nero”
+    <center>
+    <img src="img/Force_Edge_1.png" width="50%" height="50%"></center>
+    "Force Edge" Espada del Legendario caballero oscuro “Sparda” Se desconocen muchas cosas ya que no muestra su poder
+    <center>
+    <img src="img/Sparda_1.jpg" width="85%" height="30%"></center>
+    "Sparda" Verdadera forma de la "Force Edge" se puede ver su verdadero poder colocando Únicamente los 2 amuletos de sus hijos gemelos “Dante” y “vergil” Se dice que la espada fue usada para sellar el Infierno y así los demonios no pudieran entrar al mundo humano y prohibiéndole el paso a “Lucifer”
+     </div>
+	<div data-role="footer">
+		<h4>Fredy Ash Saiky Crimson</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page4">
+	<div data-role="header">
+		<h1>Equipo</h1>
+	</div>
+	<div data-role="content">	
+		  <center><h1>Descripción</h1></center>
+          El equipo esta conformado por 2 chicos apuestos metaleros que la pasamos bien y somos divertidos
+<center>
+<img src="img/freptyliano.jpg" width="40%" height="50%"></center>	<strong>Nombre Del Programador:</strong> Fredy Ash Saiky Crimson (Freptyliano)
+    	<br>
+<strong>Ocupación:</strong> Metalero, Tatuador.
+        <br>
+<strong>Edad:</strong> -
+        <br>
+<strong>Fecha De Nacimiento:</strong> -
+        <br>
+<strong>Tipo De Sangre:</strong> A positiva Demoniaca. 
+        <br>
+<strong>Hobbies:</strong> Comer pizza, Tatuar, hacer ejercicio, cazar demonios, tocar con la banda (más bien cantar), Tener sexo, Jugar Videojuegos (Especialmente DEVIL MAY CRY), ver películas, Ir a antros de vez en cuando, Irme de putas los fines de semana, Oír música a todo volumen en el estéreo, Embriagarme, Acosar a Nicolás Arrieta, Desgraciar personas y mentes, Tener citas en www.Yourcles.com (Con Mujeres solamente),  Jugar Póker, Jackblack, Pool Etc… Ver en YouTube;  Yo Soy Zero,  Nicolás Arrieta,  Hagen Wolfhold, PepeProblemas,  Alexxtrecci,  Dross Rotzank.
+        <br>
+<strong>Vive en:</strong> En vete al carajo y no me estes chingando
+        <br>
+<strong>Sueños:</strong> No tengo porque decir mis sueños en una aplicación 
+        <br>
+<strong>Relación:</strong> Soltero (Bueno tengo novia pero soy una puta infiel CX)
+        <br>
+<strong>Hijos:</strong> No tengo y no me gustan(pero si la persona que quiero quiere hijos ni modo)
+        <br>
+<strong>Casado:</strong> No
+        <br>
+<strong>Amor Platónico:</strong> No soy estúpido
+        <br>
+<strong>Cosas sobre mi:</strong> Soy un tipo muy Divertido de vez en cuando, nunca me he enojado por tonterías como que me bajaron la novia o ese tipo de cosas (únicamente me pongo serio) y es muy difícil hacerme enojar, a pesar de las incoherencias que digo soy una persona muy madura, me gusta pensar las cosas con claridad, cuando estoy con amigos me comporto de una forma muy rara y no muestro madures, odio cortarme el pelo, No me gustan que sepan mi edad, tambien no me gusta poner mis apelldios
+		<br>
+<center><img src="img/Axel.jpg" width="75%" height="50%"></center> 
+
+<strong>Nombre Del Programador:</strong> Axel Fernando Valdez García 
+    	<br>
+<strong>Ocupación:</strong> Metalero, Bajista
+        <br>
+<strong>Edad:</strong> 17
+        <br>
+<strong>Fecha De Nacimiento:</strong> 4 De Julio De 1997
+        <br>
+<strong>Tipo De Sangre:</strong> O positiva 
+        <br>
+<strong>Hobbies:</strong>tocar con la banda,ver películas,Oír a Sleeping With Sirens, Jugar Pokemon, ver anime, Dormir.
+        <br>
+<strong>Vive en:</strong> Palmas
+        <br>
+<strong>Sueños:</strong> Ser como "Pepe" una buena barba una banda y "Kellin Quinn" una voz sexy y un cabello hermoso 
+        <br>
+<strong>Relación:</strong> Novia
+        <br>
+<strong>Hijos:</strong> No
+        <br>
+<strong>Casado:</strong> No
+        <br>
+<strong>Amor Platónico:</strong> No se xD
+		<br>
+<strong>Cosas sobre Axel:</strong> Es una muy buena persona, lo considero mi tercer mejor amigo, siempre me hace reír es un amigo que siempre te escucha cuando tienes algún problema, bueno a mí siempre  me ha escuchado y me ha apoyado en muchas ocasiones (Especialmente cuando esa mujer me pateo el corazón y me dejo por otro), A veces se pone un poco “Niño” por así decirlo y muestra un poco de inmadurez pero cuando hay algo serio su forma de ser cambia y aunque sea un “Dormilón” Yo siempre le apoyare como él me apoya día a día 
+</div>
+	<div data-role="footer">
+		<h4>Fredy Ash Saiky Crimson</h4>
+	</div>
+</div>
+<audio src="audio/DMC2.mp3" controls>
+</audio>
+<div data-role="page" id="page5">
+	<div data-role="header">
+		<h1>Contáctanos</h1>
+	</div>
+	<div data-role="content">	
+			
+                  <table width="0" border="0">
+          <tr>
+            <td><label for="textinput">Nombre:</label></td>
+            <td>
+              
+              <input type="text" name="txtDante1" id="txtDante1" value="" onBlur="dmc()" />
+           </td>
+          </tr>
+          <tr>
+            <td><label for="textinput">E-mail:</label></td>
+            <td> <input type="text" name="txtDante2" id="txtDante2" value="" onBlur="hotmail()" /></td>
+          </tr>
+          <tr>
+            <td><label for="textinput">Teléfono:</label></td>
+            <td> <input type="text" name="txtDante3" id="txtDante3" value="" onBlur="telefono()" /></td>
+          </tr>
+          <tr>
+            <td> <label for="textarea">Asunto:</label></td>
+            <td>
+           <textarea cols="40" rows="8" name="txtDante4" id="txtDante4" onBlur="escribe()" ></textarea>
+          </td>
+          </tr>
+          <tr>
+            <td><label for="textinput">Seguridad:</label></td>
+            <td> <input type="text" name="txtDante5" id="txtDante5" value="NicolasArrieta" disabled="disabled" /></td>
+            <td> <input type="text" name="txtDante6" id="txtDante6" value="" onBlur="metal()" /></td>
+          </tr>
+          <tr>
+            <td colspan="2"><button onClick="enviar()">Enviar</button></td>
+            
+          </tr>
+        </table>
+        
+     </div>
+
+	<div data-role="footer">
+		<h4>Fredy Ash Saiky Crimson</h4>
+	</div>
+</div>
+</body>
+</html>
